@@ -77,7 +77,7 @@
                     <tr>
                         <td><?= $index + 1 ?></td>
                         <td><?= $kaskeluar->keterangan ?></td>
-                        <td><?= $kaskeluar->uangkeluar ?></td>
+                         <td><?= 'Rp ' . number_format($kaskeluar->uangkeluar, 0, ',', '.') ?></td>
                         <td><?= $kaskeluar->tanggal ?></td>
                     </tr>
                 <?php endforeach; ?>

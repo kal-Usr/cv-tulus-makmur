@@ -58,8 +58,8 @@
                     </div>
                 </div>
               <div class="card-footer d-flex justify-content-between">
-    <a href="<?= base_url('/checkout') ?>" class="btn btn-success">Checkout <i class="fas fa-angle-right ms-2"></i></a>
-    <a href="<?= base_url('/') ?>" class="btn btn-warning text-white"><i class="fas fa-angle-left me-2"></i> Kembali Belanja</a>
+                  <a href="<?= base_url('/') ?>" class="btn btn-warning text-white"><i class="fas fa-angle-left me-2"></i> Kembali Belanja</a>
+                  <a href="<?= base_url('/checkout') ?>" class="btn btn-success">Checkout <i class="fas fa-angle-right ms-2"></i></a>
 </div>
 
             </div>

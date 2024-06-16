@@ -5,7 +5,7 @@
              <div class="card">
                  <div class="card-header bg-primary text-light">
                      <span>Pengguna</span>
-                     <a href="<?= base_url('user/create') ?>" class="btn btn-sm btn-success">Tambah</a>
+                     <a href="<?= base_url('user/create') ?>" class="btn btn-sm btn-success mb-2">Tambah</a>
 
                      <div class="float-right">
                          <form action="<?= base_url("user/search") ?>" method="POST">

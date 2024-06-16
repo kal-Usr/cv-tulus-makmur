@@ -5,7 +5,7 @@
             <div class="card">
                 <div class="card-header bg-primary text-light">
                     <span>Kas Masuk</span>
-                    <a href="<?= base_url('kasmasuk/create') ?>" class="btn btn-sm btn-success text-light">Tambah</a>
+                    <a href="<?= base_url('kasmasuk/create') ?>" class="btn btn-sm btn-success text-light mb-2">Tambah</a>
                     <div class="float-right">
                         <form action="<?= base_url("kasmasuk/search") ?>" method="POST">
                             <div class="input-group">
@@ -35,20 +35,21 @@
                                     <th scope="col">Aksi</th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <?php foreach ($kasmasuk as $index => $row) : ?>
-                                    <tr>
-                                        <td><?= $index + 1 ?></td>
-                                        <td><?= $row->keterangan ?></td>
-                                        <td><?= $row->uangmasuk ?></td>
-                                        <td><?= $row->tanggal ?></td>
-                                        <td>
-                                            <a href="<?= base_url('kasmasuk/edit/' . $row->idkasmasuk) ?>" class="btn btn-sm btn-warning">Edit</a>
-                                            <a href="<?= base_url('kasmasuk/delete/' . $row->idkasmasuk) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
-                                        </td>
-                                    </tr>
-                                <?php endforeach; ?>
-                            </tbody>
+                        <tbody>
+    <?php foreach ($kasmasuk as $index => $row) : ?>
+        <tr>
+            <td><?= $index + 1 ?></td>
+            <td><?= $row->keterangan ?></td>
+            <td><?= 'Rp ' . number_format($row->uangmasuk, 0, ',', '.') ?></td>
+            <td><?= $row->tanggal ?></td>
+            <td>
+                <a href="<?= base_url('kasmasuk/edit/' . $row->idkasmasuk) ?>" class="btn btn-sm btn-warning">Edit</a>
+                <a href="<?= base_url('kasmasuk/delete/' . $row->idkasmasuk) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')">Hapus</a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</tbody>
+
                         </table>
                     </div>
                 </div>

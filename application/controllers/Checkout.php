@@ -33,7 +33,7 @@ class Checkout extends MY_Controller
 
 		if (! $data['cart']) {
 			$this->session->set_flashdata('warning', 'Tidak ada produk di dalam keranjang.');
-			redirect(base_url('/'));
+			redirect(base_url('/home'));
 		}
 
 		$data['input']	= $input ? $input : (object) $this->checkout->getDefaultValues();

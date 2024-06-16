@@ -9,13 +9,13 @@
                 <div class="card-body">
                     <?= form_open('login', ['method' => 'POST']) ?>
                     <div class="form-group">
-                        <label for="email">E-Mail</label>
-                        <?= form_input(['type' => 'email', 'name' => 'email', 'value' => $input->email, 'class' => 'form-control', 'placeholder' => 'Masukkan alamat email', 'required' => true]) ?>
+                        <label for="email" class="mb-2">E-Mail</label>
+                        <?= form_input(['type' => 'email', 'name' => 'email', 'value' => $input->email, 'class' => 'form-control mb-2', 'placeholder' => 'Masukkan alamat email', 'required' => true]) ?>
                         <?= form_error('email') ?>
                     </div>
                     <div class="form-group">
-                        <label for="password">Password</label>
-                        <?= form_password('password', '', ['class' => 'form-control', 'placeholder' => 'Masukkan password', 'required' => true]) ?>
+                        <label for="password" class="mb-2">Password</label>
+                        <?= form_password('password', '', ['class' => 'form-control mb-2', 'placeholder' => 'Masukkan password', 'required' => true]) ?>
                         <?= form_error('password') ?>
                     </div>
                     <button type="submit" class="btn btn-primary btn-block">Login</button>

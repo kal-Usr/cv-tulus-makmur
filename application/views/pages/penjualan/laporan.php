@@ -1,6 +1,6 @@
 <main role="main" class="container">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
             <div class="card mb-3">
                 <div class="card-header bg-primary text-light">
                     <span>Laporan Transaksi Penjualan</span>
@@ -23,7 +23,7 @@
         </div>
 
         <?php if(isset($laporan_penjualan)): ?>
-        <div class="col-md-6">
+        <div class="col-md-7">
             <div class="card">
                 <div class="card-header bg-primary text-light">
                     <span>Data Laporan Penjualan</span>
@@ -46,7 +46,7 @@
                                     <td><?= $penjualan->nama ?></td>
                                     <td><?= $penjualan->tanggal ?></td>
                                     <td><?= $penjualan->detail ?></td>
-                                    <td><?= $penjualan->total ?></td>
+                                   <td><?= 'Rp ' . number_format($penjualan->total, 0, ',', '.') ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

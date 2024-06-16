@@ -37,7 +37,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="<?= base_url('/') ?>" class="logo d-flex align-items-center">
         <img src="<?= base_url('/assets/l/img/logo.png') ?>" alt="">
-        <span>Makmur</span>
+        <span>Tulus Makmur Plywood</span>
       </a>
       <nav id="navbar" class="navbar">
         <ul>

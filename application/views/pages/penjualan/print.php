@@ -80,7 +80,7 @@
                         <td><?= $penjualan->nama ?></td>
                         <td><?= $penjualan->tanggal ?></td>
                         <td><?= $penjualan->detail ?></td>
-                        <td><?= $penjualan->total ?></td>
+                         <td><?= 'Rp ' . number_format($penjualan->total, 0, ',', '.') ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>

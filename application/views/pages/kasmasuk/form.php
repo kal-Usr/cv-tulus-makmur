@@ -13,16 +13,16 @@
 <?php endif; ?>
                     <?= form_hidden('idkasmasuk', $input->idkasmasuk ?? '') ?>
                     <div class="form-group">
-                        <label for="keterangan">Keterangan</label>
-                        <input type="text" name="keterangan" class="form-control" id="keterangan" placeholder="Masukkan keterangan" value="<?= $input->keterangan ?? '' ?>" required>
+                        <label for="keterangan" class="mb-2">Keterangan</label>
+                        <input type="text" name="keterangan" class="form-control mb-2" id="keterangan" placeholder="Masukkan keterangan" value="<?= $input->keterangan ?? '' ?>" required>
                     </div>
                     <div class="form-group">
-                        <label for="uangmasuk">Uang Masuk</label>
-                        <input type="number" name="uangmasuk" class="form-control" id="uangmasuk" placeholder="Masukkan jumlah uang masuk" value="<?= $input->uangmasuk ?? '' ?>" required>
+                        <label for="uangmasuk" class="mb-2">Uang Masuk</label>
+                        <input type="number" name="uangmasuk" class="form-control mb-2" id="uangmasuk" placeholder="Masukkan jumlah uang masuk" value="<?= $input->uangmasuk ?? '' ?>" required>
                     </div>
                     <div class="form-group">
-                        <label for="tanggal">Tanggal</label>
-                        <input type="date" name="tanggal" class="form-control" id="tanggal" value="<?= $input->tanggal ?? '' ?>" required>
+                        <label for="tanggal" class="mb-2">Tanggal</label>
+                        <input type="date" name="tanggal" class="form-control mb-2" id="tanggal" value="<?= $input->tanggal ?? '' ?>" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Simpan</button>
                     <?= form_close() ?>

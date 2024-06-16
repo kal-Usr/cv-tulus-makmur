@@ -5,7 +5,7 @@
             <div class="card">
                 <div class="card-header bg-primary text-light">
                     <span>Kas Keluar</span>
-                    <a href="<?= base_url('kaskeluar/create') ?>" class="btn btn-sm btn-success text-light">Tambah</a>
+                    <a href="<?= base_url('kaskeluar/create') ?>" class="btn btn-sm btn-success text-light mb-2">Tambah</a>
                     <div class="float-right">
                         <form action="<?= base_url("kaskeluar/search") ?>" method="POST">
                             <div class="input-group">
@@ -40,7 +40,7 @@
                                     <tr>
                                         <td><?= $index + 1 ?></td>
                                         <td><?= $row->keterangan ?></td>
-                                        <td><?= $row->uangkeluar ?></td>
+                                            <td><?= 'Rp ' . number_format($row->uangkeluar, 0, ',', '.') ?></td>
                                         <td><?= $row->tanggal ?></td>
                                         <td>
                                             <a href="<?= base_url('kaskeluar/edit/' . $row->idkaskeluar) ?>" class="btn btn-sm btn-warning">Edit</a>

@@ -27,7 +27,7 @@
                                         <td><?= $item->nama ?></td>
                                         <td><?= $item->tanggal ?></td>
                                         <td><?= $item->detail ?></td>
-                                        <td><?= $item->total ?></td>
+                                        <td><?= 'Rp ' . number_format($item->total, 0, ',', '.') ?></td>
                                         <td>
                                             <a href="<?= base_url('penjualan/edit/' . $item->idpenjualan) ?>" class="btn btn-sm btn-warning">Edit</a>
                                             <a href="<?= base_url('penjualan/delete/' . $item->idpenjualan) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>

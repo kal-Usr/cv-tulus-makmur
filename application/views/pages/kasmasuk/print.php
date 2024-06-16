@@ -77,7 +77,7 @@
                     <tr>
                         <td><?= $index + 1 ?></td>
                         <td><?= $kasmasuk->keterangan ?></td>
-                        <td><?= $kasmasuk->uangmasuk ?></td>
+                         <td><?= 'Rp ' . number_format($kasmasuk->uangmasuk, 0, ',', '.') ?></td>
                         <td><?= $kasmasuk->tanggal ?></td>
                     </tr>
                 <?php endforeach; ?>

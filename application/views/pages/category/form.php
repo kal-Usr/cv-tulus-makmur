@@ -11,13 +11,13 @@
                       <?= form_open($form_action, ['method' => 'POST'])?>
                       <?= isset($input->id) ? form_hidden('id', $input->id) : '' ?>
                           <div class="form-group">
-                              <label for="">Kategori</label>
-                              <?= form_input('title', $input->title, ['class' => 'form-control', 'id' => 'title', 'onkeyup' => 'createSlug()', 'required' => true, 'autofocus' => true]) ?>
+                              <label for="" class="mb-2">Kategori</label>
+                              <?= form_input('title', $input->title, ['class' => 'form-control mb-2', 'id' => 'title', 'onkeyup' => 'createSlug()', 'required' => true, 'autofocus' => true]) ?>
                             <?= form_error('title') ?>
                           </div>
                           <div class="form-group">
-                              <label for="">Slug</label>
-                              <?= form_input('slug', $input->slug, ['class' => 'form-control', 'id' => 'slug', 'required' => true]) ?>
+                              <label for="" class="mb-2">Slug</label>
+                              <?= form_input('slug', $input->slug, ['class' => 'form-control mb-2', 'id' => 'slug', 'required' => true]) ?>
                               <?= form_error('slug') ?>
                           </div>
 

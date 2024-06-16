@@ -13,16 +13,16 @@
 <?php endif; ?>
                     <?= isset($input->idkaskeluar) ? form_hidden('idkaskeluar', $input->idkaskeluar) : '' ?>
                     <div class="form-group">
-                        <label for="keterangan">Keterangan</label>
-                        <input type="text" name="keterangan" class="form-control" id="keterangan" placeholder="Masukkan keterangan" value="<?= isset($input->keterangan) ? $input->keterangan : '' ?>" required>
+                        <label for="keterangan" class="mb-2">Keterangan</label>
+                        <input type="text" name="keterangan" class="form-control mb-2" id="keterangan" placeholder="Masukkan keterangan" value="<?= isset($input->keterangan) ? $input->keterangan : '' ?>" required>
                     </div>
                     <div class="form-group">
-                        <label for="uangkeluar">Uang Keluar</label>
-                        <input type="number" name="uangkeluar" class="form-control" id="uangkeluar" placeholder="Masukkan jumlah uang keluar" value="<?= isset($input->uangkeluar) ? $input->uangkeluar : '' ?>" required>
+                        <label for="uangkeluar" class="mb-2">Uang Keluar</label>
+                        <input type="number" name="uangkeluar" class="form-control mb-2" id="uangkeluar" placeholder="Masukkan jumlah uang keluar" value="<?= isset($input->uangkeluar) ? $input->uangkeluar : '' ?>" required>
                     </div>
                     <div class="form-group">
-                        <label for="tanggal">Tanggal</label>
-                        <input type="date" name="tanggal" class="form-control" id="tanggal" value="<?= isset($input->tanggal) ? $input->tanggal : '' ?>" required>
+                        <label for="tanggal" class="mb-2">Tanggal</label>
+                        <input type="date" name="tanggal" class="form-control mb-2" id="tanggal" value="<?= isset($input->tanggal) ? $input->tanggal : '' ?>" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Simpan</button>
                     <?= form_close() ?>

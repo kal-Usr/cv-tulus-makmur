@@ -10,18 +10,18 @@
                 <div class="card-body">
                     <form action="<?= base_url("/checkout/create") ?>" method="POST">
                         <div class="form-group">
-                            <label for="name">Nama</label>
-                            <input type="text" class="form-control" name="name" placeholder="Masukkan nama lengkap penerima" value="<?= $input->name ?>">
+                            <label for="name" class="mb-2">Nama</label>
+                            <input type="text" class="form-control mb-2" name="name" placeholder="Masukkan nama lengkap penerima" value="<?= $input->name ?>">
                             <?= form_error('name') ?>
                         </div>
                         <div class="form-group">
-                            <label for="address">Alamat Lengkap</label>
-                            <textarea name="address" id="address" cols="30" rows="5" class="form-control"><?= $input->address ?></textarea>
+                            <label for="address" class="mb-2">Alamat Lengkap</label>
+                            <textarea name="address" id="address" cols="30" rows="5" class="form-control mb-2"><?= $input->address ?></textarea>
                             <?= form_error('address') ?>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Telepon</label>
-                            <input type="text" class="form-control" name="phone" placeholder="Masukkan nomor telepon penerima" value="<?= $input->phone ?>">
+                            <label for="phone" class="mb-2">Telepon</label>
+                            <input type="text" class="form-control mb-2" name="phone" placeholder="Masukkan nomor telepon penerima" value="<?= $input->phone ?>">
                             <?= form_error('phone') ?>
                         </div>
                         <button class="btn btn-primary" type="submit">Simpan</button>
